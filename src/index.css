@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom TabView Styling */
+.custom-tabview .p-tabview-nav {
+  background: transparent;
+  border: none;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.custom-tabview .p-tabview-nav li {
+  margin: 0 0.5rem;
+}
+
+.custom-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background: transparent;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: #6b7280;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.custom-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background: #2a2a2b;
+  border-color: #4b4b4c;
+  color: #e5e7eb;
+  box-shadow: 0 4px 12px rgba(98, 99, 99, 0.3);
+}
+
+.custom-tabview .p-tabview-nav li:not(.p-highlight) .p-tabview-nav-link:hover {
+  border-color: #4b4b4c;
+  color: #4b4b4c;
+  background: #eff6ff;
+}
+
+.custom-tabview .p-tabview-panels {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* Custom Password Field */
+.p-password {
+  width: 100%;
+}
+
+.p-password .p-inputtext {
+  width: 100%;
+}
+
+/* Custom Button Styling */
+.p-button {
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.p-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 102, 103, 0.25);
+}
+
+/* Custom Checkbox */
+.p-checkbox .p-checkbox-box {
+  border-radius: 6px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  background: #2a2a2b;
+  border-color: #2a2a2b;
+}
+
+/* Focus States */
+.p-inputtext:focus {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-color: #4b4b4c;
+  background: white;
+}
+
+/* Enhanced Input Styling */
+.p-inputtext {
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.p-inputtext:hover {
+  border-color: #4b4b4c;
+  background: white;
+}
+
+/* Enhanced Button Styling */
+.p-button {
+  font-size: 0.95rem;
+  letter-spacing: 0.025em;
+}
+
+/* Card Enhancements */
+.bg-white {
+  transition: all 0.3s ease;
+}
+
+/* Gradient Header Styling */
+.bg-gradient-to-r {
+  background: linear-gradient(135deg, #2a2a2b 0%, #2a2a2b 100%);
+}
